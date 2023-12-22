@@ -28,7 +28,8 @@ python yolov5/train.py --img 1388 --batch (4) --epochs (10) --data
 Note: Because we didn't train the model from scratch and used the pretrained yolov5 model weights, yolov5s.pt should be copyed the under this project.
 
 #### Tracking algorithm
-kalman filter
+**kalman filter**
+
 The noise-driven complete version is in position_kf.py file
 In practical, we implemented a two-frame kalman filter, where the input is the observations of the current frame and the prediction of the current frame from last frame. The return is the prediction xHat and the covariance martrix.
 
@@ -37,4 +38,4 @@ Hungarian algorithm
 
 The detail is in the report.pdf
 
-The animation of our cell detection and tracking result is in animation.mp4 file.
+The animation of our cell detection and tracking result is in `animation.mp4` file.
