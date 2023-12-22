@@ -27,4 +27,12 @@ python yolov5/train.py --img 1388 --batch (4) --epochs (10) --data
 
 Note: Because we didn't train the model from scratch and used the pretrained yolov5 model weights, yolov5s.pt should be copyed the under this project.
 
-To be updated...
+#### Tracking algorithm
+kalman filter
+The noise-driven complete version is in position_kf.py file
+In practical, we implemented a two-frame kalman filter, where the input is the observations of the current frame and the prediction of the current frame from last frame. The return is the prediction xHat and the covariance martrix.
+
+#### Data association
+Hungarian algorithm
+
+The detail is in the report.pdf
