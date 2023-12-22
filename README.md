@@ -36,3 +36,5 @@ In practical, we implemented a two-frame kalman filter, where the input is the o
 Hungarian algorithm
 
 The detail is in the report.pdf
+
+The animation of our cell detection and tracking result is in animation.mp4 file.
